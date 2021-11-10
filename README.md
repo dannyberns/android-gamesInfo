@@ -40,4 +40,9 @@ well arranged information about video games such as rating, summary, date releas
 ## Installation
 
 You will need Gradle to successfully open and run the project.
+
+
+## Acknowledgements
+
+ - [IGDB API](https://www.igdb.com/discover)
     
