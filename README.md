@@ -1,7 +1,7 @@
 
 # Games Info - Android Course Project
 
-An android application made during Android course - The application provides easy to access and
+An android application made during Android course, HIT, semester C - The application provides easy to access and
 well arranged information about video games such as rating, summary, date released, screenshots and more!
 
 
