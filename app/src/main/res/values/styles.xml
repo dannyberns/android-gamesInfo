@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="AppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/colorEbony</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Base_ToolbarStyle">
+        <item name="android:background">#fff</item>
+        <item name="titleTextAppearance">@style/CustomTitleTextAppearance</item>
+
+    </style>
+
+    <style name="CustomTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="CustomProgressBar" parent="android:Widget.ProgressBar">
+        <item name="colorAccent">#facf5a</item>
+    </style>
+    <style name="CustomSearchViewText" parent="android:Widget.Material.SearchView">
+        <item name="android:editTextColor">#808080</item>
+        <item name="android:textColorHint">#808080</item>
+    </style>
+
+</resources>

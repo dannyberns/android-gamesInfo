@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/fragmentMainScreen"
+        android:iconTint="#fff"/>
+    <item
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        android:id="@+id/fragmentSearch2"
+        />
+</menu>

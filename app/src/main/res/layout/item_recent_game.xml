@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewpager_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    android:layout_margin="10dp"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <ImageView
+            android:id="@+id/viewpager_img"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+            <TextView
+                android:id="@+id/viewpager_name"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Game name"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/viewpager_img"
+                app:layout_constraintTop_toBottomOf="@id/viewpager_img"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="15dp"
+                />
+        <TextView
+            android:id="@+id/viewpager_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/viewpager_name"
+            app:layout_constraintStart_toStartOf="@id/viewpager_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Date"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

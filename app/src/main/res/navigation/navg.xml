@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navg"
+    app:startDestination="@id/fragmentMainScreen">
+    <fragment
+        android:id="@+id/fragmentGameInfo"
+        android:name="com.example.gamingnews.Fragments.FragmentGameInfo"
+        android:label="fragment_game_info"
+        tools:layout="@layout/fragment_game_info" />
+    <fragment
+        android:id="@+id/fragmentGameList"
+        android:name="com.example.gamingnews.Fragments.FragmentGameList"
+        android:label="fragment_game_list"
+        tools:layout="@layout/fragment_game_list" >
+        <action
+            android:id="@+id/action_fragmentGameList_to_fragmentGameInfo"
+            app:destination="@id/fragmentGameInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMainScreen"
+        android:name="com.example.gamingnews.Fragments.FragmentMainScreen"
+        android:label="fragment_main_screen">
+        <action
+            android:id="@+id/action_blankFragment_to_fragmentGameList"
+            app:destination="@id/fragmentGameList" />
+        <action
+            android:id="@+id/action_fragmentMainScreen_to_fragmentGameInfo"
+            app:destination="@id/fragmentGameInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSearch2"
+        android:name="com.example.gamingnews.Fragments.FragmentSearch"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_fragmentSearch2_to_fragmentGameInfo"
+            app:destination="@id/fragmentGameInfo" />
+    </fragment>
+</navigation>
